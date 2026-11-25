@@ -1,0 +1,19 @@
+:root { --bg: #ffffff; --text: #1c1b22; --muted: #5f5d6b; --line: #e4e2ec; --accent: #5b4bd6; --box: #f5f3fc; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121117; --text: #eceaf4; --muted: #a5a2b4; --line: #2c2a38; --accent: #a99bff; --box: #1b1a24; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+.brand { margin: 0; color: var(--accent); font-weight: 700; letter-spacing: 0.02em; }
+h1 { margin: 4px 0 0; font-size: 30px; line-height: 1.2; }
+h2 { margin: 36px 0 8px; font-size: 20px; line-height: 1.3; }
+h3 { margin: 24px 0 4px; font-size: 16px; }
+p, ul { margin: 8px 0; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+.meta { color: var(--muted); margin-top: 4px; }
+.box { background: var(--box); border: 1px solid var(--line); border-radius: 12px; padding: 4px 16px 12px; margin: 24px 0; }
+.box h2 { margin-top: 12px; }
+.foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); }
